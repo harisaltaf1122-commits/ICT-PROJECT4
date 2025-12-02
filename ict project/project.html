@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+   
+    <title>FAST  Shopping Hub</title>
+    <link rel="stylesheet" href="html.css" />
+</head>
+
+<body>
+<header class="hii">
+    <div class="nav-container">
+        <h1 class="z">Shopping Hub</h1>
+
+        <nav class="nav-links">
+            <a href="project.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+<button class="btn-cart">Add to Cart</button>
+
+
+
+        </nav>
+        <script>
+function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let count = document.getElementById("cart-count");
+    if(count) count.innerText = cart.length;
+}
+updateCartCount();
+</script>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="hi-content">
+        <h2> Nice  your visit </h2>
+        <p> You kow FAST is to much FAST  </p>
+       
+    </div>
+</header>
+<section id="why">
+    <h2>Why Shop With Us?</h2>
+
+    <div class="features-container">
+        <div class="feature-box">
+            <h3>Fast Delivery</h3>
+            <p>We bring your items to your door quickly.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Secure Payments</h3>
+            <p>Your transactions are fully protected.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Premium Quality</h3>
+            <p>We offer only high-quality items.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Easy Returns</h3>
+            <p>Simple and fast return process.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured">
+    <h2> representation by FAST   </h2>
+
+    <div class="product-row">
+        <div class="product-cart">
+            <img src="download (1).jpg" alt="Product 1" />
+            
+        </div>
+
+        <div class="product-cart">
+            <img src="download.jpg" alt="Product 2" />
+           
+        </div>
+
+        <div class="product-cart">
+            <img src="download (2).jpg" alt="Product 3" />
+           
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Created by Fatima, Zain & Haris</p><br>
+<p>© 2025 Colorful Shopping Hub</p>
+</footer>
+</body>
+</html>
